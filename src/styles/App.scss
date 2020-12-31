@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Dancing Script', cursive;
+    background-color: #FBDA61;
+background-image: linear-gradient(45deg, #FBDA61 39%, #FF5ACD 96%);
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-attachment: fixed;
+}
+h1,h2,h3,h4 {
+    color: rgb(65, 62, 62);
+}
+h2 {
+    font-weight: 700 !important;
+}
+
+
+.App {
+    transition: all 0.5s ease
+}
+
+.active-library {
+    margin-left: 30%
+}
+@import './Player';
+@import './Song';
+@import './Library';
+@import './nav';
