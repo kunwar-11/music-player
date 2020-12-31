@@ -74,6 +74,7 @@ function Player({currentSong , isPlaying , setIsPlaying , audioElement , time , 
     const songEndHandler = async () => {
         const currIndex = songs.findIndex((song) => song.id === currentSong.id)
         await setCurrentSong(songs[(currIndex + 1) % songs.length])
+        actvieSongHandler(songs[(currIndex + 1) % songs.length])
         if(isPlaying) {
             audioElement.current.play()
         }
